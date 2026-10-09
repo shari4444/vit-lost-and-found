@@ -1,0 +1,474 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-high": "#eae8e3", "secondary": "#515f76", "secondary-fixed": "#d5e3ff", "inverse-on-surface": "#f2f1ec", "tertiary-fixed": "#d9e3fb", "inverse-primary": "#b5c7ea", "background": "#fbf9f4", "primary-fixed-dim": "#b5c7ea", "error": "#ba1a1a", "on-primary-fixed-variant": "#364764", "surface-container-highest": "#e4e2dd", "on-secondary": "#ffffff", "on-background": "#1b1c19", "on-tertiary-fixed": "#111c2d", "surface-variant": "#e4e2dd", "primary-container": "#0b1f3a", "tertiary-fixed-dim": "#bdc7de", "on-error-container": "#93000a", "surface-dim": "#dbdad5", "secondary-container": "#d5e3ff", "outline-variant": "#c4c6ce", "tertiary": "#000616", "on-surface": "#1b1c19", "on-primary": "#ffffff", "surface": "#fbf9f4", "surface-container-lowest": "#ffffff", "on-surface-variant": "#44474d", "inverse-surface": "#30312e", "primary-fixed": "#d6e3ff", "tertiary-container": "#151f31", "surface-container": "#f0eee9", "on-error": "#ffffff", "surface-tint": "#4d5f7d", "on-primary-fixed": "#071c36", "on-tertiary-container": "#7d879d", "primary": "#000615", "on-tertiary": "#ffffff", "on-primary-container": "#7587a7", "surface-container-low": "#f5f3ee", "secondary-fixed-dim": "#b9c7e2", "on-secondary-container": "#57657d", "on-secondary-fixed-variant": "#3a475e", "error-container": "#ffdad6", "outline": "#75777e", "on-secondary-fixed": "#0d1c30", "surface-bright": "#fbf9f4", "on-tertiary-fixed-variant": "#3d475a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "margin-mobile": "1rem", "space-2xl": "3rem", "margin-desktop-max": "5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin": "2rem", "gutter-mobile": "1rem", "space-xl": "2rem", "space-lg": "1.5rem", "gutter": "1.5rem" }, "fontFamily": { "headline-lg-mobile": [ "Plus Jakarta Sans" ], "body-sm": [ "Inter" ], "headline-lg": [ "Plus Jakarta Sans" ], "headline-display-mobile": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "headline-sm": [ "Plus Jakarta Sans" ], "headline-display": [ "Plus Jakarta Sans" ], "label-lg": [ "Inter" ], "label-md": [ "Inter" ], "label-sm": [ "Inter" ], "headline-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Inter" ] }, "fontSize": { "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0", "fontWeight": "400" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-display-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0", "fontWeight": "400" } ], "headline-sm": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "headline-display": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-md": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col shadow-[1px_0_10px_rgba(11,31,58,0.04)]"><div class="h-16 px-6 flex items-center gap-space-sm bg-surface-container-low"><img alt="Vidyalankar Institute of Technology" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOM3PZF36JFtu7YZK7SrjSVgoUOaAYcyJQ8SO1j5AIsny7V6ZML8NljoeVsMn237AiGMzZFzr2KctBt9GRKOMBuz1wEVAfMizw-hUIvp3XZHtpdl_xo4aBOhqKmdick5Qn-wf7lPZs6I59aDjk1NRj4sAgGAPexRe9FFfl8Jv6_cc8QpLCqic5nbtzBglPanOynQ6mr-mFU0zdhZNMjSZVez6VBYIB42ZF64uDzEnQYmsS5GFurYc2LA"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-tight text-[14px]">Vidyalankar Institute of Technology</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Lost &amp; Found Portal</span></div></div><div class="px-4 py-3"><div class="flex items-center gap-2 px-3 py-2 bg-primary-container text-on-primary-container rounded-lg shadow-[0_1px_3px_rgba(11,31,58,0.15)]"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">verified_user</span><span class="font-label-sm text-label-sm text-on-primary font-semibold tracking-wide">PORTAL CONSOLE</span></div></div><nav class="flex-1 px-3 py-2 space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-[0_1px_3px_rgba(11,31,58,0.1)]"><div class="px-3 pt-2 pb-1 font-label-sm text-label-sm text-secondary uppercase tracking-wider">Student Services</div><a aria-current="page" class="flex items-center gap-space-sm px-3 py-2 transition-all bg-primary-container text-on-primary font-semibold rounded-lg shadow-[0_1px_3px_rgba(11,31,58,0.1)]" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="report-lost-item" href="#"><span class="material-symbols-outlined text-[20px]">add_circle</span><span class="font-label-md text-label-md">Report Lost Item</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="my-requests" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span class="font-label-md text-label-md">My Requests</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="browse-found-items" href="#"><span class="material-symbols-outlined text-[20px]">search</span><span class="font-label-md text-label-md">Found Items</span></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="notifications" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-md text-label-md">Notifications</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">3</span></a><div class="pt-4 px-3 pb-1 font-label-sm text-label-sm text-secondary uppercase tracking-wider">Administrative Ops</div><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="administrator-console" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span><span class="font-label-md text-label-md">Overview</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="lost-requests" href="#"><span class="material-symbols-outlined text-[20px]">inbox</span><span class="font-label-md text-label-md">Lost Requests</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="match-management" href="#"><span class="material-symbols-outlined text-[20px]">rule</span><span class="font-label-md text-label-md">Match Management</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="students" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span class="font-label-md text-label-md">Students</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="audit-log" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-label-md text-label-md">Audit Log</span></a></nav><div class="p-3 bg-surface-container border-t border-outline-variant/30 flex items-center justify-between"><a class="flex items-center gap-2 text-on-surface-variant hover:text-error transition-colors px-2 py-1.5 rounded-lg w-full" data-path="login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span><span class="font-label-md text-label-md">Sign Out</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(11,31,58,0.05)] z-40 flex items-center justify-between px-6 lg:px-8"><div class="flex items-center gap-space-md"><span class="hidden md:inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold tracking-wider uppercase">Vidyalankar Campus Registry</span></div><div class="flex items-center gap-space-md"><div class="relative hidden sm:flex items-center"><span class="material-symbols-outlined absolute left-3 text-secondary text-[18px]">search</span><input class="bg-surface-container-lowest pl-9 pr-4 py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface placeholder-secondary focus:outline-none shadow-[0_1px_2px_rgba(11,31,58,0.04)] w-64" placeholder="Search reference ID or item..." type="text"></div><a class="p-2 text-on-surface-variant hover:text-on-surface rounded-lg relative hover:bg-surface-container transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></a><div class="flex items-center gap-space-sm pl-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_3px_rgba(11,31,58,0.12)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkF0_2QQZB8Eu2ALFO0Cs28iaCpXSCHUTmJy3K3eNJ_FYhK9JlEOphm8bUtGf6Qha6CSvu1N8PZgaTZ5noNO49PKSzoSQVw4GfKbl42ypKpFDkShdpV0VUev13XVKRg-eTSywIOlpmR6xQxjtB5u4Fb0PhMzQXOpyIugoguI3qj8lnd5IPMxESv8UQ-e0HHAD6aCJ9ZvgS6wRl1PRFNmzTStHNmbnxUNZQV52CiKVq"><div class="hidden md:flex flex-col"><span class="font-label-md text-label-md text-primary font-medium leading-none">Reg: 21BCE1048</span><span class="font-label-sm text-label-sm text-secondary leading-tight mt-0.5">Student Profile</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-6 lg:px-8 py-space-lg"><div class="flex flex-col w-full space-y-8">
+<!-- Top Banner / Student Greeting Section -->
+<section class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-6 lg:p-8 shadow-sm">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="absolute right-32 -bottom-20 w-64 h-64 rounded-full bg-surface-container-high/50 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+<div class="max-w-2xl space-y-2">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-secondary-fixed/40 text-on-secondary-fixed-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Session Active • Fall 2024</span>
+</div>
+<h1 class="font-headline-display text-headline-display text-primary tracking-tight">
+          Welcome back, Student.
+        </h1>
+<p class="font-body-lg text-body-lg text-secondary">Track your active claims, view match suggestions, and manage your reported items across the Vidyalankar campus registry.</p>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex flex-wrap items-center gap-3">
+<button class="inline-flex items-center gap-2 bg-primary text-on-primary hover:bg-surface-tint active:scale-[0.99] transition-all px-4 py-2.5 rounded shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span class="font-label-lg text-label-lg font-semibold">Report Lost Item</span>
+</button>
+<button class="inline-flex items-center gap-2 bg-surface-container-lowest hover:bg-surface-container text-primary transition-all px-4 py-2.5 rounded shadow-sm">
+<span class="material-symbols-outlined text-[18px]">travel_explore</span>
+<span class="font-label-lg text-label-lg font-medium">Browse Found Items</span>
+</button>
+<button class="inline-flex items-center gap-2 bg-surface-container hover:bg-surface-container-high text-secondary transition-all px-3 py-2.5 rounded">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span class="font-label-md text-label-md font-medium">View All Requests</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Metric Overview Cards -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Card 1: Active Requests -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Active Requests</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">pending_actions</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-headline-display text-headline-display text-primary leading-none">02</span>
+<span class="font-body-sm text-body-sm text-secondary">cases in pipeline</span>
+</div>
+<div class="flex items-center gap-1.5 mt-3 pt-3 bg-surface-container-low/50 rounded p-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Pending Review &amp; Physical Check</span>
+</div>
+</div>
+<!-- Card 2: Matched Items -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Matched Items</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">task_alt</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-headline-display text-headline-display text-primary leading-none">01</span>
+<span class="font-body-sm text-body-sm text-secondary">potential match</span>
+</div>
+<div class="flex items-center justify-between mt-3 pt-3 bg-secondary-fixed/30 rounded px-2 py-1">
+<span class="font-label-sm text-label-sm text-on-secondary-fixed-variant font-semibold">Ready for verification</span>
+<span class="material-symbols-outlined text-on-secondary-fixed-variant text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3: Collected Items -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Collected Items</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-headline-display text-headline-display text-primary leading-none">03</span>
+<span class="font-body-sm text-body-sm text-secondary">historic handovers</span>
+</div>
+<div class="flex items-center gap-1.5 mt-3 pt-3">
+<span class="font-label-sm text-label-sm text-secondary">Settled academic intake records</span>
+</div>
+</div>
+<!-- Card 4: Unread Notifications -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Security Alerts</span>
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+</div>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-headline-display text-headline-display text-primary leading-none">02</span>
+<span class="font-body-sm text-body-sm text-secondary">unread alerts</span>
+</div>
+<div class="flex items-center gap-2 mt-3 pt-3 bg-surface-container-low/70 rounded px-2 py-1">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Dispatch ping from SJT Desk</span>
+</div>
+</div>
+</section>
+<!-- Main Content Split Grid: Recent Requests (Left 8 cols) & Verification Visualizer (Right 4 cols) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-6 items-start">
+<!-- Left Column: Recent Requests Table -->
+<div class="xl:col-span-8 flex flex-col space-y-4">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-6">
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-5 gap-3">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">dataset</span>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">Active &amp; Historic Reports</h2>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">Live status log of lost belongings filed under registration 21BCE1048</p>
+</div>
+<div class="flex items-center gap-2 self-start sm:self-auto">
+<span class="font-label-sm text-label-sm text-secondary px-2 py-1 rounded bg-surface-container">Filtered by: All Active</span>
+<button class="p-1.5 rounded hover:bg-surface-container text-secondary transition-colors" title="Export CSV">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto -mx-6 px-6">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-secondary">
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider rounded-l">Request ID</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider">Item Details</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider hidden md:table-cell">Category</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider hidden sm:table-cell">Date Lost</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider">Location</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider">Status</th>
+<th class="py-3 px-4 font-label-sm text-label-sm uppercase tracking-wider text-right rounded-r">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 space-y-1">
+<!-- Row 1: Matched Item -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-3.5 px-4 font-label-md text-label-md font-semibold text-primary">#LR-1024</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary font-medium group-hover:text-surface-tint transition-colors">Titan Octane Silver Wristwatch</span>
+<span class="font-body-sm text-body-sm text-secondary md:hidden">Accessories • Oct 24</span>
+</div>
+</td>
+<td class="py-3.5 px-4 hidden md:table-cell">
+<span class="font-body-sm text-body-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">Accessories</span>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-secondary hidden sm:table-cell">Oct 24, 2024</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">location_on</span>
+<span class="">SJT Ground Floor Lab</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[11px] font-semibold bg-secondary-fixed/50 text-on-secondary-fixed-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-tint"></span>
+                    Matched
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="inline-flex items-center gap-2">
+<a class="font-label-sm text-label-sm font-semibold text-primary hover:underline" href="#">Track</a>
+<span class="text-outline-variant text-[12px]">|</span>
+<a class="font-label-sm text-label-sm font-semibold text-secondary hover:text-primary" href="#">Details</a>
+</div>
+</td>
+</tr>
+<!-- Row 2: Under Review -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-3.5 px-4 font-label-md text-label-md font-semibold text-primary">#LR-1019</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary font-medium group-hover:text-surface-tint transition-colors">HP Pavilion Blue Laptop Charger</span>
+<span class="font-body-sm text-body-sm text-secondary md:hidden">Electronics • Oct 19</span>
+</div>
+</td>
+<td class="py-3.5 px-4 hidden md:table-cell">
+<span class="font-body-sm text-body-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">Electronics</span>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-secondary hidden sm:table-cell">Oct 19, 2024</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">location_on</span>
+<span class="">PRP Library 3rd Floor</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[11px] font-semibold bg-surface-container text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Under Review
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="inline-flex items-center gap-2">
+<a class="font-label-sm text-label-sm font-semibold text-primary hover:underline" href="#">Track</a>
+<span class="text-outline-variant text-[12px]">|</span>
+<a class="font-label-sm text-label-sm font-semibold text-secondary hover:text-primary" href="#">Details</a>
+</div>
+</td>
+</tr>
+<!-- Row 3: Pending -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-3.5 px-4 font-label-md text-label-md font-semibold text-primary">#LR-0994</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary font-medium group-hover:text-surface-tint transition-colors">Casio FX-991EX ClassWiz</span>
+<span class="font-body-sm text-body-sm text-secondary md:hidden">Stationery • Oct 12</span>
+</div>
+</td>
+<td class="py-3.5 px-4 hidden md:table-cell">
+<span class="font-body-sm text-body-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">Academics</span>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-secondary hidden sm:table-cell">Oct 12, 2024</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">location_on</span>
+<span class="">TT Block Hall 402</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[11px] font-semibold bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Pending
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="inline-flex items-center gap-2">
+<a class="font-label-sm text-label-sm font-semibold text-primary hover:underline" href="#">Track</a>
+<span class="text-outline-variant text-[12px]">|</span>
+<a class="font-label-sm text-label-sm font-semibold text-secondary hover:text-primary" href="#">Details</a>
+</div>
+</td>
+</tr>
+<!-- Row 4: Collected -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group opacity-75 hover:opacity-100">
+<td class="py-3.5 px-4 font-label-md text-label-md font-semibold text-secondary">#LR-0988</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-secondary line-through">Black Leather Bi-Fold Wallet</span>
+<span class="font-body-sm text-body-sm text-secondary md:hidden">Essentials • Sep 30</span>
+</div>
+</td>
+<td class="py-3.5 px-4 hidden md:table-cell">
+<span class="font-body-sm text-body-sm text-secondary bg-surface-container px-2 py-0.5 rounded">Personal Essentials</span>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-secondary hidden sm:table-cell">Sep 30, 2024</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-secondary">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span class="">Food Mall Block 2</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[11px] font-semibold bg-surface-container text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Collected
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="inline-flex items-center gap-2">
+<a class="font-label-sm text-label-sm font-medium text-secondary hover:text-primary" href="#">Receipt</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Campus Recovery Process Guide (Inline Utility) -->
+<div class="bg-surface-container-low p-5 rounded-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg font-semibold text-primary">Identity Verification Requirement</h4>
+<p class="font-body-sm text-body-sm text-secondary">Bring your active Vidyalankar Smart ID Card when claiming items at security counters.</p>
+</div>
+</div>
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm font-semibold hover:underline cursor-pointer">
+<span class="">Read Claim Policy</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Match Preview Highlight & Desk Location -->
+<div class="xl:col-span-4 flex flex-col space-y-6">
+<!-- High Priority Match Callout Widget -->
+<div class="bg-primary-container text-on-primary rounded-xl p-6 shadow-md relative overflow-hidden">
+<div class="absolute -right-12 -bottom-12 w-40 h-40 bg-surface-tint/20 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-4">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-tint text-on-primary">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Algorithmic Match</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-primary-container">92% Confidence</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary mb-1">Titan Octane Silver Wristwatch</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mb-4">
+          Found at Silver Jubilee Tower (SJT) - Audio Visual Lab 012 by Maintenance Staff.
+        </p>
+<div class="bg-tertiary-container/80 p-3.5 rounded-lg mb-4 space-y-2">
+<div class="flex justify-between items-center text-on-tertiary-container">
+<span class="font-label-sm text-label-sm">Found Registry Ref:</span>
+<span class="font-label-sm text-label-sm font-mono text-on-primary">#FD-8831</span>
+</div>
+<div class="flex justify-between items-center text-on-tertiary-container">
+<span class="font-label-sm text-label-sm">Current Custody:</span>
+<span class="font-label-sm text-label-sm text-on-primary">SJT Ground Floor Gate 2 Desk</span>
+</div>
+</div>
+<button class="w-full bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim transition-colors py-2 px-4 rounded font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+          Confirm Ownership &amp; Request Token
+        </button>
+</div>
+<!-- Campus Recovery Desk Info Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-[20px]">corporate_fare</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Campus Recovery Office</h3>
+</div>
+<div class="space-y-4 font-body-sm text-body-sm text-secondary">
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded bg-surface-container flex items-center justify-center text-primary flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-semibold text-primary block">Central Custody Post</span>
+<span class="">Ground Floor Security Wing, Main Administrative Building (Central Block), Opposite Registrar's Hall</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded bg-surface-container flex items-center justify-center text-primary flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-semibold text-primary block">Operating Intake Hours</span>
+<span class="">Monday – Saturday: 9:00 AM – 5:30 PM<br>Sunday &amp; Academic Holidays: Closed</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded bg-surface-container flex items-center justify-center text-primary flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">phone_in_talk</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-semibold text-primary block">Campus Intercom &amp; Email</span>
+<span class="font-mono">Ext. 2488 / lostandfound@vit.edu.in</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low rounded-lg p-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Duty Superintendent:</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Off. R. Jayakumar (Emp: 10482)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Section: Recent Campus Found Items Preview Ticker -->
+<section class="space-y-4">
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">feed</span>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">Recent Campus Found Items</h2>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Belongings logged by students and wardens in the last 24 hours awaiting verified claimants</p>
+</div>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md font-semibold text-primary hover:text-surface-tint transition-colors" href="#">
+<span class="">Browse entire university inventory</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<!-- Found Item 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative h-44 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close-up of a hardbound advanced calculus mathematics university textbook resting on a dark study table at a campus library with soft natural sunlight through high windows, sharp focus on worn blue cloth cover, academic clean visual tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtZ9p4tL3MGHfrGXN921R81c_RqM-bhtASWg8uKUbBPvX0wiAfyX1b_BS2i5_ptf9kiFJJjDA9HVyIs9JPrB9frj7xG2Avk-nzRU9Cjx-EQapSvW9lx1Y8kzuN7JOiUNDLd0elcZ7-WfvBwcr_T6bNvmo_QWGnQ3Aswe8eOp48ISpHFnBKfa3QCRdsVoTrBaj76e-1apMq21OlTV67M79AMiKJgAm_h4tYdF-VUZaC">
+<span class="absolute top-3 left-3 bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded">
+              Books &amp; Notes
+            </span>
+<span class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur-sm font-mono text-[11px] text-secondary px-2 py-0.5 rounded shadow-sm">
+              Logged 2h ago
+            </span>
+</div>
+<div class="p-5 space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Calculus &amp; Linear Algebra Textbook</h3>
+<div class="flex items-center gap-1.5 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="">PRP Library, 2nd Floor Reading Annex</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Thomas' Calculus (14th Edition) with highlighted yellow sections on Differential Equations. Found near Desk 42.
+            </p>
+</div>
+</div>
+<div class="p-5 pt-0">
+<button class="w-full py-2 px-3 rounded bg-surface-container hover:bg-primary hover:text-on-primary text-primary transition-colors font-label-md text-label-md font-medium flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="">Is this yours? Submit claim</span>
+</button>
+</div>
+</div>
+<!-- Found Item 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative h-44 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Set of brass brass dormitory and bicycle keys attached to a bright red woven university lanyard resting on a gray granite campus bench, natural daylight, soft bokeh in background showing university courtyard, sharp macro product photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK3dY4pks3gjyGuGg3bN-pnIqJ65C3zyQMQTcJ89NrhTpaHzFo2H1xpxLH0HsHvQqWAk9LzbqNcvQsm2goUbqsbjvmlGjbbggN4oA-NrCYE5728okFft6yC0VJlnrkKxw-oSid2HG3ZLG16MV3uAUNexyT_fWqGXWEaPXRyLkLhUsxQ2TLV5H3e0AUWdWlOHHAkCcBtM6syG_W4y0Osgl3EjKTeCnbZ1sk-0IxPoll">
+<span class="absolute top-3 left-3 bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded">
+              Keys &amp; IDs
+            </span>
+<span class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur-sm font-mono text-[11px] text-secondary px-2 py-0.5 rounded shadow-sm">
+              Logged 5h ago
+            </span>
+</div>
+<div class="p-5 space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Keys with Red Vidyalankar Lanyard</h3>
+<div class="flex items-center gap-1.5 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="">Outdoor Amphitheatre Steps</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Set of 3 silver Godrej keys plus one bicycle padlock key attached to a red textile strap.
+            </p>
+</div>
+</div>
+<div class="p-5 pt-0">
+<button class="w-full py-2 px-3 rounded bg-surface-container hover:bg-primary hover:text-on-primary text-primary transition-colors font-label-md text-label-md font-medium flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="">Is this yours? Submit claim</span>
+</button>
+</div>
+</div>
+<!-- Found Item 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative h-44 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Matte black wireless earbuds charging case sitting on a clean wooden university cafeteria dining table next to a water bottle, subtle indoor ambient lighting, architectural clarity, university aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlZvYH-7UylZbUtA796rFj3n7JqPD6TZRNeSAucK1734Vf7aTj1X6F97XM8SwHaIz2ErV8Y3KUDdKQ99w-TasRuFzQfClkxGgRb1DUVYCPq7lVNEo9Wy5cCoyBT8btfQoZ8VaXKscGXQ64kAs9OiuR02BUGBu5zqFgBHYXFMaekINhv7dKZ32d3EKfsPPecXLkrKTIDMeoKJhKs7nLq_lfE9jNNxG4iS3zRJ72KnKE">
+<span class="absolute top-3 left-3 bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded">
+              Electronics
+            </span>
+<span class="absolute bottom-3 right-3 bg-surface-container-lowest/90 backdrop-blur-sm font-mono text-[11px] text-secondary px-2 py-0.5 rounded shadow-sm">
+              Logged 7h ago
+            </span>
+</div>
+<div class="p-5 space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">boAt Airdopes 141 Charging Case</h3>
+<div class="flex items-center gap-1.5 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="">Gazebo Cafe, Technology Tower</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Charcoal black magnetic case with faint scratch on the bottom lid. Earbuds enclosed inside.
+            </p>
+</div>
+</div>
+<div class="p-5 pt-0">
+<button class="w-full py-2 px-3 rounded bg-surface-container hover:bg-primary hover:text-on-primary text-primary transition-colors font-label-md text-label-md font-medium flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="">Is this yours? Submit claim</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div></main></div>
+
+</body></html>

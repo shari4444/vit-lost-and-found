@@ -1,0 +1,416 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-high": "#eae8e3", "secondary": "#515f76", "secondary-fixed": "#d5e3ff", "inverse-on-surface": "#f2f1ec", "tertiary-fixed": "#d9e3fb", "inverse-primary": "#b5c7ea", "background": "#fbf9f4", "primary-fixed-dim": "#b5c7ea", "error": "#ba1a1a", "on-primary-fixed-variant": "#364764", "surface-container-highest": "#e4e2dd", "on-secondary": "#ffffff", "on-background": "#1b1c19", "on-tertiary-fixed": "#111c2d", "surface-variant": "#e4e2dd", "primary-container": "#0b1f3a", "tertiary-fixed-dim": "#bdc7de", "on-error-container": "#93000a", "surface-dim": "#dbdad5", "secondary-container": "#d5e3ff", "outline-variant": "#c4c6ce", "tertiary": "#000616", "on-surface": "#1b1c19", "on-primary": "#ffffff", "surface": "#fbf9f4", "surface-container-lowest": "#ffffff", "on-surface-variant": "#44474d", "inverse-surface": "#30312e", "primary-fixed": "#d6e3ff", "tertiary-container": "#151f31", "surface-container": "#f0eee9", "on-error": "#ffffff", "surface-tint": "#4d5f7d", "on-primary-fixed": "#071c36", "on-tertiary-container": "#7d879d", "primary": "#000615", "on-tertiary": "#ffffff", "on-primary-container": "#7587a7", "surface-container-low": "#f5f3ee", "secondary-fixed-dim": "#b9c7e2", "on-secondary-container": "#57657d", "on-secondary-fixed-variant": "#3a475e", "error-container": "#ffdad6", "outline": "#75777e", "on-secondary-fixed": "#0d1c30", "surface-bright": "#fbf9f4", "on-tertiary-fixed-variant": "#3d475a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "margin-mobile": "1rem", "space-2xl": "3rem", "margin-desktop-max": "5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin": "2rem", "gutter-mobile": "1rem", "space-xl": "2rem", "space-lg": "1.5rem", "gutter": "1.5rem" }, "fontFamily": { "headline-lg-mobile": [ "Plus Jakarta Sans" ], "body-sm": [ "Inter" ], "headline-lg": [ "Plus Jakarta Sans" ], "headline-display-mobile": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "headline-sm": [ "Plus Jakarta Sans" ], "headline-display": [ "Plus Jakarta Sans" ], "label-lg": [ "Inter" ], "label-md": [ "Inter" ], "label-sm": [ "Inter" ], "headline-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Inter" ] }, "fontSize": { "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "18px", "letterSpacing": "0", "fontWeight": "400" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-display-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0", "fontWeight": "400" } ], "headline-sm": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "headline-display": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-md": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col shadow-[1px_0_10px_rgba(11,31,58,0.04)]"><div class="h-16 px-6 flex items-center gap-space-sm bg-surface-container-low"><img alt="Vidyalankar Institute of Technology" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkUAVv5pzZVbo00BwSNyeaJWxkiK76eWygVxKiu9hMKrn5PbUeoUFk5NVKVjpQgB3TxrE-adF-TqZj9HV1m9vgk0RBFJkmlUooodIoWceSXp0gi_Ke6KQksBaKYt6TU5nvD5-C4Qn6JIvV_IjhVWA84wAcuF2alknLQQK8gIhIgHmrr_m3eEx2GXai7C2NQIFRDEpw0Qn65lEA5c-918yL7lMXRPuYUM26DiXCZqUe-ItHIiLf4P7x6w"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-tight">Vidyalankar</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Admin Console</span></div></div><div class="px-4 py-3"><div class="flex items-center gap-2 px-3 py-2 bg-primary-container text-on-primary-container rounded-lg shadow-[0_1px_3px_rgba(11,31,58,0.15)]"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">verified_user</span><span class="font-label-sm text-label-sm text-on-primary font-semibold tracking-wide">PORTAL CONSOLE</span></div></div><nav class="flex-1 px-3 py-2 space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-[0_1px_3px_rgba(11,31,58,0.1)]"><div class="px-3 pt-2 pb-1 font-label-sm text-label-sm text-secondary uppercase tracking-wider">Student Services</div><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span class="font-label-md text-label-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="report-lost-item" href="#"><span class="material-symbols-outlined text-[20px]">add_circle</span><span class="font-label-md text-label-md">Report Lost Item</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="my-requests" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span class="font-label-md text-label-md">My Requests</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="browse-found-items" href="#"><span class="material-symbols-outlined text-[20px]">search</span><span class="font-label-md text-label-md">Found Items</span></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="notifications" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-md text-label-md">Notifications</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">3</span></a><div class="pt-4 px-3 pb-1 font-label-sm text-label-sm text-secondary uppercase tracking-wider">Administrative Ops</div><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="administrator-console" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span><span class="font-label-md text-label-md">Overview</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="lost-requests" href="#"><span class="material-symbols-outlined text-[20px]">inbox</span><span class="font-label-md text-label-md">Lost Requests</span></a><a aria-current="page" class="flex items-center gap-space-sm px-3 py-2 transition-all bg-primary-container text-on-primary font-semibold rounded-lg shadow-[0_1px_3px_rgba(11,31,58,0.1)]" data-path="match-management" href="#"><span class="material-symbols-outlined text-[20px]">rule</span><span class="font-label-md text-label-md">Match Management</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="students" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span class="font-label-md text-label-md">Students</span></a><a class="flex items-center gap-space-sm px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="audit-log" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-label-md text-label-md">Audit Log</span></a></nav><div class="p-3 bg-surface-container border-t border-outline-variant/30 flex items-center justify-between"><a class="flex items-center gap-2 text-on-surface-variant hover:text-error transition-colors px-2 py-1.5 rounded-lg w-full" data-path="login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span><span class="font-label-md text-label-md">Sign Out</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(11,31,58,0.05)] z-40 flex items-center justify-between px-6 lg:px-8"><div class="flex items-center gap-space-md"><span class="hidden md:inline-flex items-center px-2.5 py-1 rounded-lg bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold tracking-wider uppercase">Vidyalankar Campus Registry</span></div><div class="flex items-center gap-space-md"><div class="relative hidden sm:flex items-center"><span class="material-symbols-outlined absolute left-3 text-secondary text-[18px]">search</span><input class="bg-surface-container-lowest pl-9 pr-4 py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface placeholder-secondary focus:outline-none shadow-[0_1px_2px_rgba(11,31,58,0.04)] w-64" placeholder="Search reference ID or item..." type="text"></div><a class="p-2 text-on-surface-variant hover:text-on-surface rounded-lg relative hover:bg-surface-container transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></a><div class="flex items-center gap-space-sm pl-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_3px_rgba(11,31,58,0.12)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkF0_2QQZB8Eu2ALFO0Cs28iaCpXSCHUTmJy3K3eNJ_FYhK9JlEOphm8bUtGf6Qha6CSvu1N8PZgaTZ5noNO49PKSzoSQVw4GfKbl42ypKpFDkShdpV0VUev13XVKRg-eTSywIOlpmR6xQxjtB5u4Fb0PhMzQXOpyIugoguI3qj8lnd5IPMxESv8UQ-e0HHAD6aCJ9ZvgS6wRl1PRFNmzTStHNmbnxUNZQV52CiKVq"><div class="hidden md:flex flex-col"><span class="font-label-md text-label-md text-primary font-medium leading-none">Reg: 21BCE1048</span><span class="font-label-sm text-label-sm text-secondary leading-tight mt-0.5">Student Profile</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-6 lg:px-8 py-space-lg"><div class="flex flex-col w-full pb-16">
+<!-- Top Operational Banner & Institutional Breadcrumb -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-8">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Registry Operations</span>
+<span class="text-secondary text-xs">•</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Automated Heuristic Engine v2.4</span>
+</div>
+<h1 class="font-headline-display text-headline-display text-primary tracking-tight">Match Management Console</h1>
+<p class="font-body-lg text-body-lg text-secondary mt-1 max-w-3xl">
+        Review automated candidate pairings between Student Lost Requests and Intake Found Items. Evaluate corroborative telemetry before confirming custody release.
+      </p>
+</div>
+<!-- Institutional Queue Selector Pill -->
+<div class="flex items-center gap-2 bg-surface-container p-1 rounded-xl shadow-sm self-start lg:self-auto">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-semibold shadow-sm flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+        Pairing Queue (4)
+      </button>
+<button class="px-3.5 py-1.5 rounded-lg text-secondary hover:text-on-surface font-label-md text-label-md transition-colors">
+        Audit Resolved (87)
+      </button>
+<button class="px-3.5 py-1.5 rounded-lg text-secondary hover:text-on-surface font-label-md text-label-md transition-colors">
+        System Rules
+      </button>
+</div>
+</div>
+<!-- Key Metrics Matrix -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-8">
+<!-- Stat 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Pending Candidate Pairs</span>
+<span class="font-headline-display text-headline-display text-primary font-bold mt-1">04</span>
+<span class="font-body-sm text-body-sm text-secondary mt-0.5">High urgency: 2 electronics awaiting review</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center text-amber-700">
+<span class="material-symbols-outlined text-2xl">compare_arrows</span>
+</div>
+</div>
+<!-- Stat 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Confirmed Recoveries</span>
+<span class="font-headline-display text-headline-display text-primary font-bold mt-1">87</span>
+<span class="font-body-sm text-body-sm text-secondary mt-0.5">Academic Fall Semester 2024</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-700">
+<span class="material-symbols-outlined text-2xl">verified</span>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Algorithm Acceptance Floor</span>
+<span class="font-headline-display text-headline-display text-primary font-bold mt-1">75%<span class="text-sm font-normal text-secondary ml-1">+</span></span>
+<span class="font-body-sm text-body-sm text-secondary mt-0.5">Location-proximity, temporal and lexical match</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-2xl">tune</span>
+</div>
+</div>
+</div>
+<!-- Dynamic Notification / Success State Banner (Hidden by default, shown via state) -->
+<div class="hidden mb-6 p-4 rounded-xl bg-emerald-50 text-emerald-950 shadow-sm transition-all duration-300" id="matchSuccessToast">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800 shrink-0">
+<span class="material-symbols-outlined text-lg">task_alt</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg font-bold text-emerald-900">Match successfully created and recorded in Ledger!</p>
+<p class="font-body-sm text-body-sm text-emerald-700">Notification dispatched to student profile (21BCE1492) and physical verification slip generated for Security Post 3.</p>
+</div>
+</div>
+<button class="px-4 py-2 bg-emerald-800 text-white font-label-md text-label-md font-semibold rounded-lg hover:bg-emerald-900 shadow-sm transition-all shrink-0 flex items-center gap-1.5" onclick="window.print()">
+<span class="material-symbols-outlined text-base">print</span>
+        Generate Handover Verification Slip
+      </button>
+</div>
+</div>
+<!-- Main Comparison Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- LEFT PANEL: Lost Item Request -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-xl shadow-sm p-6 flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-amber-500/80"></div>
+<div>
+<!-- Card Header -->
+<div class="flex items-start justify-between gap-4 pb-5">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold">Student Filing</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container text-secondary">Vidyalankar Campus</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-0.5">Request #LR-1024</h2>
+</div>
+<span class="px-2.5 py-1 rounded bg-amber-50 text-amber-800 font-label-sm text-label-sm font-semibold tracking-wide flex items-center gap-1" id="lostStatusBadge">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+            Pending Match
+          </span>
+</div>
+<!-- Student Dossier Metadata Strip -->
+<div class="bg-surface-container-low rounded-xl p-3.5 mb-6 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-bold text-primary font-headline-sm">
+              RV
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-primary">Rahul Verma</span>
+<span class="font-body-sm text-body-sm text-secondary">Reg No: <span class="font-medium text-on-surface">21BCE1492</span> • SCOPE School</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-secondary block">Reported Timestamp</span>
+<span class="font-body-sm text-body-sm font-medium text-primary">Oct 24, 2024 • 14:30 IST</span>
+</div>
+</div>
+<!-- Evidence Thumbnail & Core Attributes -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+<div class="sm:col-span-1">
+<div class="w-full h-36 rounded-xl overflow-hidden bg-surface-container relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close up archival product photo of white Apple AirPods Pro 2 charging case on a dark desk with a thin scratch near the lower hinge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnJSmdXdSddOsFmnJgQBJClKg3uSxHTJEcLWhx-FrxBtomhPA2ZmgVcJ0xW2k2165Ouk2oESj-dEIE963q8bgRRLnocTfXltM8rrZq2QJwDqVr1vT8MZMARH8X3YDboBEXd9rfB_4IGRKwtL41kXepvzjwyYP_xjkvSJHH-x5iQLW5xahhGkOJFSwpwycjvGWgfhZLIbSjawaS9JuR1je5vFQQe1wIvu9BRrajJh78">
+<span class="absolute bottom-1.5 left-1.5 bg-primary/80 backdrop-blur-md text-white font-label-sm text-[10px] px-1.5 py-0.5 rounded">Claimant Photo</span>
+</div>
+</div>
+<div class="sm:col-span-2 space-y-3">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block">Item Classification</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Apple AirPods Pro (2nd Gen)</span>
+<span class="font-body-sm text-body-sm text-secondary block mt-0.5">Category: Electronics / Audio Accessories</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block">Reported Colour</span>
+<span class="font-body-md text-body-md font-medium text-on-surface flex items-center gap-1.5 mt-0.5">
+<span class="w-3 h-3 rounded-full bg-white shadow-sm ring-1 ring-slate-300"></span>
+                  Glossy White
+                </span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block">Reported Location</span>
+<span class="font-body-md text-body-md font-medium text-on-surface mt-0.5 block truncate" title="Silver Jubilee Tower (SJT) - Room 412">
+                  SJT - Room 412
+                </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Narrative Fields -->
+<div class="space-y-4">
+<div class="bg-surface-container-low/70 p-3.5 rounded-xl">
+<div class="flex items-center gap-1.5 mb-1.5">
+<span class="material-symbols-outlined text-secondary text-sm">notes</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase text-secondary">Student Description</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              "Lost in SJT 412 during database lab session. The case has a small scratch on the bottom hinge and a transparent silicone protective sleeve."
+            </p>
+</div>
+<div class="bg-amber-50/50 p-3.5 rounded-xl">
+<div class="flex items-center gap-1.5 mb-1.5 text-amber-900">
+<span class="material-symbols-outlined text-sm text-amber-700">fingerprint</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-amber-800">Critical Identifying Marks</span>
+</div>
+<p class="font-body-sm text-body-sm text-amber-950 font-medium">
+              Engraved initials <span class="bg-amber-100 text-amber-900 px-1 py-0.5 rounded font-mono font-bold">"RV"</span> on charging case rear casing.
+            </p>
+</div>
+</div>
+</div>
+<!-- Footer Telemetry -->
+<div class="mt-6 pt-4 flex items-center justify-between text-secondary font-label-sm text-label-sm">
+<span class="">Filing Auth: Verified Vidyalankar Google Workspace SSO</span>
+<span class="font-mono text-xs">HASH: 9a8c2...e401</span>
+</div>
+</div>
+<!-- RIGHT PANEL: Found Item Intake Record -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-xl shadow-sm p-6 flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div>
+<!-- Card Header -->
+<div class="flex items-start justify-between gap-4 pb-5">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold">Campus Custody Intake</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container text-secondary">Log Entry</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-0.5">Found Intake #FI-0891</h2>
+</div>
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold tracking-wide flex items-center gap-1" id="foundStatusBadge">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Available
+          </span>
+</div>
+<!-- Custody Officer Log Strip -->
+<div class="bg-surface-container-low rounded-xl p-3.5 mb-6 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-lg">shield_person</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-primary">Campus Security Post 3</span>
+<span class="font-body-sm text-body-sm text-secondary">Intake Officer: <span class="font-medium text-on-surface">Head Warden K. Murugan</span></span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-secondary block">Intake Timestamp</span>
+<span class="font-body-sm text-body-sm font-medium text-primary">Oct 24, 2024 • 17:15 IST</span>
+</div>
+</div>
+<!-- Evidence Thumbnail & Core Attributes -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+<div class="sm:col-span-1">
+<div class="w-full h-36 rounded-xl overflow-hidden bg-surface-container relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Institutional forensic intake photograph of recovered AirPods case resting on a numbered measurement mat in campus security locker room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB35eD-FJVpT8nqHTqqHAaHRqKOebNGNvJ3sXtbP3SO9rgjsQAUsc5TO-IXLgiKQAbHOLJDIysMxU486nhTFj57d3zsi3CFSlBrmbUVKyvfe2ql7emV4KVr_GzRr5NmgyAq9jiIYdd_5PdPq7Uxcc1Tv4creYclNrv9GiRPbRDie4HkGGyvwDdXNH5k18C3MYecPXQRDVMn0ZWkFQw666gF-X3sv76qnmybenjYDxma">
+<span class="absolute bottom-1.5 left-1.5 bg-primary/80 backdrop-blur-md text-white font-label-sm text-[10px] px-1.5 py-0.5 rounded">Security Intake Photo</span>
+</div>
+</div>
+<div class="sm:col-span-2 space-y-3">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block">Item Classification</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">AirPods Pro Case with Earbuds</span>
+<span class="font-body-sm text-body-sm text-secondary block mt-0.5">Category: Electronics</span>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block">Inspected Colour</span>
+<span class="font-body-md text-body-md font-medium text-on-surface flex items-center gap-1.5 mt-0.5">
+<span class="w-3 h-3 rounded-full bg-white shadow-sm ring-1 ring-slate-300"></span>
+                  White
+                </span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block">Recovery Point</span>
+<span class="font-body-md text-body-md font-medium text-on-surface mt-0.5 block truncate" title="SJT 4th Floor Corridor Bench">
+                  SJT 4th Fl. Corridor Bench
+                </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Narrative Fields -->
+<div class="space-y-4">
+<div class="bg-surface-container-low/70 p-3.5 rounded-xl">
+<div class="flex items-center gap-1.5 mb-1.5">
+<span class="material-symbols-outlined text-secondary text-sm">security</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase text-secondary">Security Officer Intake Notes</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              "Turned in by cleaning staff. White wireless earbuds in clear plastic case, visible small scratch near hinge."
+            </p>
+</div>
+<div class="bg-surface-container-high/60 p-3.5 rounded-xl">
+<div class="flex items-center gap-1.5 mb-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">inventory_2</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase text-secondary">Current Safe Vault Holding Location</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary font-semibold">
+              Central Security Desk — Safe Vault Locker #14
+            </p>
+</div>
+</div>
+</div>
+<!-- Footer Telemetry -->
+<div class="mt-6 pt-4 flex items-center justify-between text-secondary font-label-sm text-label-sm">
+<span class="">Custody Officer Barcode: SEC-4890</span>
+<span class="font-mono text-xs">TAG: 0891-OCT24</span>
+</div>
+</div>
+</div>
+<!-- Heuristic Factor Matrix (Visual Correlation Breakdown) -->
+<div class="mt-6 bg-surface-container-lowest rounded-xl p-5 shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">insights</span>
+<span class="font-headline-sm text-headline-sm text-primary">Algorithmic Correlation Factor Breakdown</span>
+</div>
+<div class="flex items-center gap-4 text-xs font-label-sm">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span> Exact Geographic Proximity</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span> Temporal Delta: 2h 45m</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 pt-1">
+<div class="bg-surface-container-low p-3 rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-sm text-label-sm text-secondary">Building Concordance</span>
+<span class="font-label-md text-label-md font-bold text-emerald-800">100%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-emerald-600 h-full w-full"></div>
+</div>
+<span class="font-body-sm text-[11px] text-secondary mt-1 block">Both localized in SJT Floor 4</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-sm text-label-sm text-secondary">Temporal Coincidence</span>
+<span class="font-label-md text-label-md font-bold text-emerald-800">96%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-emerald-600 h-full w-[96%]"></div>
+</div>
+<span class="font-body-sm text-[11px] text-secondary mt-1 block">Reported Oct 24 / Found same shift</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-sm text-label-sm text-secondary">Lexical &amp; Category Match</span>
+<span class="font-label-md text-label-md font-bold text-emerald-800">95%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-emerald-600 h-full w-[95%]"></div>
+</div>
+<span class="font-body-sm text-[11px] text-secondary mt-1 block">Electronics • AirPods Pro</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-sm text-label-sm text-secondary">Descriptor Overlap</span>
+<span class="font-label-md text-label-md font-bold text-emerald-800">88%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-emerald-600 h-full w-[88%]"></div>
+</div>
+<span class="font-body-sm text-[11px] text-secondary mt-1 block">Scratch near hinge, silicone sleeve</span>
+</div>
+</div>
+</div>
+<!-- Unified Match Decision Console (Bottom Bar) -->
+<div class="mt-6 bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+<!-- Confidence Gauge Section -->
+<div class="flex items-center gap-4 w-full md:w-auto">
+<div class="relative w-16 h-16 shrink-0 flex items-center justify-center">
+<!-- SVG Circular Ring -->
+<svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-emerald-600" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="94, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-headline-sm text-headline-sm font-bold text-primary">94%</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">High Similarity Candidate Match</span>
+<span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-label-sm text-label-sm font-bold uppercase">Confidence Tier A</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+          Algorithmic alignment based on Location (SJT), Date (Oct 24), and specific physical features (hinge defect + protective sleeve).
+        </p>
+</div>
+</div>
+<!-- Administrative Action Trigger Buttons -->
+<div class="flex items-center gap-3 w-full md:w-auto justify-end" id="actionControls">
+<!-- Reject Button -->
+<button class="px-5 py-2.5 rounded-lg bg-surface-container text-error hover:bg-error-container hover:text-on-error-container font-label-lg text-label-lg font-semibold transition-all flex items-center gap-2" id="rejectBtn" onclick="handleRejectMatch()">
+<span class="material-symbols-outlined text-lg">close</span>
+        Reject Match Candidate
+      </button>
+<!-- Approve / Create Match Button -->
+<button class="px-6 py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-lg text-label-lg font-semibold shadow-sm transition-all flex items-center gap-2 active:scale-95" id="createMatchBtn" onclick="handleCreateMatch()">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+        Create Match
+      </button>
+</div>
+</div>
+</div>
+<script>
+  function handleCreateMatch() {
+    const successToast = document.getElementById('matchSuccessToast');
+    const lostBadge = document.getElementById('lostStatusBadge');
+    const foundBadge = document.getElementById('foundStatusBadge');
+    const actionControls = document.getElementById('actionControls');
+    const createBtn = document.getElementById('createMatchBtn');
+    const rejectBtn = document.getElementById('rejectBtn');
+
+    // Show celebratory banner
+    successToast.classList.remove('hidden');
+
+    // Update Left Status Badge to Confirmed Matched
+    lostBadge.className = 'px-2.5 py-1 rounded bg-emerald-50 text-emerald-800 font-label-sm text-label-sm font-semibold tracking-wide flex items-center gap-1';
+    lostBadge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Matched';
+
+    // Update Right Status Badge to Matched / Release In-Progress
+    foundBadge.className = 'px-2.5 py-1 rounded bg-emerald-50 text-emerald-800 font-label-sm text-label-sm font-semibold tracking-wide flex items-center gap-1';
+    foundBadge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Claim Assigned';
+
+    // Replace action controls with verification slip action
+    actionControls.innerHTML = `
+      <div class="flex items-center gap-3">
+        <span class="text-emerald-700 font-label-md text-label-md font-semibold flex items-center gap-1">
+          <span class="material-symbols-outlined text-base">check</span> Pair Confirmed
+        </span>
+        <button onclick="window.print()" class="px-5 py-2.5 bg-primary-container text-on-primary font-label-md text-label-md font-semibold rounded-lg shadow-sm hover:bg-primary transition-all flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-base">receipt_long</span>
+          Generate Handover Verification Slip
+        </button>
+      </div>
+    `;
+
+    // Smooth scroll toast into view
+    successToast.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function handleRejectMatch() {
+    if (confirm("Are you sure you want to dismiss this candidate pairing? It will return Request #LR-1024 back to the pool.")) {
+      const lostBadge = document.getElementById('lostStatusBadge');
+      lostBadge.className = 'px-2.5 py-1 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold tracking-wide flex items-center gap-1';
+      lostBadge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Unpaired';
+
+      const actionControls = document.getElementById('actionControls');
+      actionControls.innerHTML = `
+        <span class="text-secondary font-label-md text-label-md italic">Candidate match dismissed. Advancing queue...</span>
+      `;
+    }
+  }
+</script></main></div>
+
+</body></html>

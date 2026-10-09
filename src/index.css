@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+}
+
+/* 
+  Academic Registry UI — Permanent High-Contrast Dark Theme
+  Screen: Deep Navy / Charcoal Canvas (#0B1424 / #0B0F19)
+  Cards / Containers: Dark Canvas Surface (#121C2F)
+  Borders: Deep Slate (#1F2C45)
+  Primary Action Buttons: Crisp Collegiate Blue (#2563EB) with White text
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0B1424;
+  color: #FFFFFF;
+}
+
+/* Primary Action Button Utility */
+.btn-action-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+.btn-action-primary:hover {
+  background-color: #1d4ed8;
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4C6CE;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #1F2C45;
+}
