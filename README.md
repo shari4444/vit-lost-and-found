@@ -7,13 +7,13 @@ This web application is built for the **DBMS Project** using:
 
 ---
 
-## 📌 Project Brief
+##  Project Brief
 
 VIT Lost & Found simplifies the campus lost-and-found process by connecting students and administrators through a single platform. Students can report missing items and track their requests, while administrators manage found items, review potential matches, and notify students.
 
 **Tech Stack:** React, Vite, Tailwind CSS, Supabase Auth, PostgreSQL, Supabase Storage.
 
-## ✨ Key Features
+##  Key Features
 
 - Student registration and login
 - Lost-item reporting with descriptions and photos
@@ -23,16 +23,16 @@ VIT Lost & Found simplifies the campus lost-and-found process by connecting stud
 - Potential item matching and in-app notifications
 - Database-backed authentication and access control
 
-## 📖 User Guide
+##  User Guide
 
-### 🎓 For Students
+###  For Students
 1. Register or log in to your account.
 2. Submit a report with details of your lost item.
 3. Browse the found-items section for possible matches.
 4. Track your report's status from your dashboard.
 5. Check notifications for match-related updates and follow the collection process.
 
-### 🛡️ For Administrators
+###  For Administrators
 1. Log in through the admin portal.
 2. Review student-submitted lost-item reports.
 3. Add recovered items to the found-items catalogue.
