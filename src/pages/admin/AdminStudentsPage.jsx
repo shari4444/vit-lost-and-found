@@ -80,33 +80,33 @@ export const AdminStudentsPage = () => {
             <table className="w-full text-left text-xs border-collapse">
               <thead>
                 <tr className="bg-surface-container-low dark:bg-darkcanvas-border/50 text-secondary dark:text-slate-400 uppercase tracking-wider text-[10px] font-bold border-b border-surface-container dark:border-darkcanvas-border">
-                  <th className="py-3.5 px-5">Student Name</th>
-                  <th className="py-3.5 px-5">Roll Number</th>
-                  <th className="py-3.5 px-5">Department</th>
-                  <th className="py-3.5 px-5">Email Address</th>
-                  <th className="py-3.5 px-5">Contact Phone</th>
-                  <th className="py-3.5 px-5">System UUID</th>
+                  <th className="py-3.5 px-3.5 sm:px-5 whitespace-nowrap">Student Name</th>
+                  <th className="py-3.5 px-3.5 sm:px-5 whitespace-nowrap">Roll Number</th>
+                  <th className="py-3.5 px-3.5 sm:px-5 whitespace-nowrap">Department</th>
+                  <th className="py-3.5 px-3.5 sm:px-5 whitespace-nowrap">Email Address</th>
+                  <th className="py-3.5 px-3.5 sm:px-5 whitespace-nowrap">Contact Phone</th>
+                  <th className="py-3.5 px-3.5 sm:px-5 whitespace-nowrap">System UUID</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-surface-container dark:divide-darkcanvas-border">
                 {filtered.map((student) => (
                   <tr key={student.student_id} className="hover:bg-surface-container-low/40 dark:hover:bg-darkcanvas-border/30 transition">
-                    <td className="py-3.5 px-5">
+                    <td className="py-3.5 px-3.5 sm:px-5 whitespace-nowrap">
                       <div className="font-bold text-primary dark:text-white text-xs">{student.name}</div>
                     </td>
-                    <td className="py-3.5 px-5 font-mono font-bold text-primary dark:text-white">
+                    <td className="py-3.5 px-3.5 sm:px-5 font-mono font-bold text-primary dark:text-white whitespace-nowrap">
                       {student.roll_no}
                     </td>
-                    <td className="py-3.5 px-5 text-secondary dark:text-slate-300">
+                    <td className="py-3.5 px-3.5 sm:px-5 text-secondary dark:text-slate-300 whitespace-nowrap">
                       {student.department || 'Not specified'}
                     </td>
-                    <td className="py-3.5 px-5 text-on-surface dark:text-slate-300 font-mono text-[11px]">
+                    <td className="py-3.5 px-3.5 sm:px-5 text-on-surface dark:text-slate-300 font-mono text-[11px] whitespace-nowrap">
                       {student.email}
                     </td>
-                    <td className="py-3.5 px-5 text-secondary dark:text-slate-400">
+                    <td className="py-3.5 px-3.5 sm:px-5 text-secondary dark:text-slate-400 whitespace-nowrap">
                       {student.phone_number || '—'}
                     </td>
-                    <td className="py-3.5 px-5 font-mono text-[10px] text-secondary dark:text-slate-500">
+                    <td className="py-3.5 px-3.5 sm:px-5 font-mono text-[10px] text-secondary dark:text-slate-500 whitespace-nowrap">
                       {student.student_id ? `${student.student_id.slice(0, 8)}...` : '—'}
                     </td>
                   </tr>

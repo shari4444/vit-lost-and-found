@@ -239,13 +239,13 @@ export const AdminLostRequestsPage = () => {
             <table className="w-full text-left text-xs border-collapse">
               <thead>
                 <tr className="bg-surface-container-low dark:bg-darkcanvas-border/50 text-secondary dark:text-slate-400 uppercase tracking-wider text-[10px] font-bold border-b border-surface-container dark:border-darkcanvas-border">
-                  <th className="py-3 px-5">ID</th>
-                  <th className="py-3 px-5">Student</th>
-                  <th className="py-3 px-5">Category & Details</th>
-                  <th className="py-3 px-5">Date Reported</th>
-                  <th className="py-3 px-5">Status</th>
-                  <th className="py-3 px-5">Reviewed By</th>
-                  <th className="py-3 px-5 text-right">Action</th>
+                  <th className="py-3 px-3 sm:px-5 whitespace-nowrap">ID</th>
+                  <th className="py-3 px-3 sm:px-5">Student</th>
+                  <th className="py-3 px-3 sm:px-5">Category & Details</th>
+                  <th className="py-3 px-3 sm:px-5 whitespace-nowrap">Date Reported</th>
+                  <th className="py-3 px-3 sm:px-5 whitespace-nowrap">Status</th>
+                  <th className="py-3 px-3 sm:px-5 whitespace-nowrap">Reviewed By</th>
+                  <th className="py-3 px-3 sm:px-5 text-right whitespace-nowrap">Action</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-surface-container dark:divide-darkcanvas-border">
@@ -255,10 +255,10 @@ export const AdminLostRequestsPage = () => {
 
                   return (
                     <tr key={req.request_id} className="hover:bg-surface-container-low/40 dark:hover:bg-darkcanvas-border/30 transition">
-                      <td className="py-3.5 px-5 font-mono font-bold text-primary dark:text-white">
+                      <td className="py-3.5 px-3 sm:px-5 font-mono font-bold text-primary dark:text-white whitespace-nowrap">
                         #{req.request_id}
                       </td>
-                      <td className="py-3.5 px-5">
+                      <td className="py-3.5 px-3 sm:px-5 min-w-[130px]">
                         <div className="font-semibold text-primary dark:text-white">
                           {student?.name || 'Student'}
                         </div>
@@ -266,7 +266,7 @@ export const AdminLostRequestsPage = () => {
                           {student?.roll_no || req.student_id.slice(0, 8)}
                         </div>
                       </td>
-                      <td className="py-3.5 px-5">
+                      <td className="py-3.5 px-3 sm:px-5 min-w-[140px]">
                         <span className="font-semibold text-primary dark:text-white">{req.category}</span>
                         {req.colour && (
                           <span className="block text-[11px] text-secondary dark:text-slate-400">
@@ -274,11 +274,11 @@ export const AdminLostRequestsPage = () => {
                           </span>
                         )}
                       </td>
-                      <td className="py-3.5 px-5 text-secondary dark:text-slate-400 font-mono text-[11px]">
+                      <td className="py-3.5 px-3 sm:px-5 text-secondary dark:text-slate-400 font-mono text-[11px] whitespace-nowrap">
                         {req.date_report}
                       </td>
-                      <td className="py-3.5 px-5">{getStatusBadge(req.status)}</td>
-                      <td className="py-3.5 px-5">
+                      <td className="py-3.5 px-3 sm:px-5 whitespace-nowrap">{getStatusBadge(req.status)}</td>
+                      <td className="py-3.5 px-3 sm:px-5 whitespace-nowrap">
                         {reviewer ? (
                           <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-primary dark:text-white">
                             <ShieldCheck size={12} className="text-secondary" />
@@ -290,7 +290,7 @@ export const AdminLostRequestsPage = () => {
                           </span>
                         )}
                       </td>
-                      <td className="py-3.5 px-5 text-right">
+                      <td className="py-3.5 px-3 sm:px-5 text-right whitespace-nowrap">
                         <button
                           onClick={() => handleOpenReviewModal(req)}
                           className="px-3 py-1 bg-surface-container dark:bg-darkcanvas-border hover:bg-surface-container-high rounded text-xs font-bold text-primary dark:text-white transition"
@@ -310,7 +310,7 @@ export const AdminLostRequestsPage = () => {
       {/* Review & Assign Status Modal */}
       {selectedRequest && (
         <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="bg-surface-container-lowest dark:bg-darkcanvas-surface border border-surface-container-high dark:border-darkcanvas-border rounded-xl max-w-lg w-full p-6 shadow-2xl space-y-4 animate-in fade-in">
+          <div className="bg-surface-container-lowest dark:bg-darkcanvas-surface border border-surface-container-high dark:border-darkcanvas-border rounded-xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-4 sm:p-6 shadow-2xl space-y-4 animate-in fade-in">
             <div className="flex items-center justify-between border-b border-surface-container dark:border-darkcanvas-border pb-3">
               <div>
                 <span className="text-[11px] font-mono font-bold text-secondary dark:text-slate-400">

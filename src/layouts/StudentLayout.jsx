@@ -67,17 +67,36 @@ export const StudentLayout = ({ children, title }) => {
   return (
     <div className="min-h-screen bg-darkcanvas-bg text-white flex flex-col md:flex-row transition-colors duration-150 font-sans">
       {/* Mobile Top Header */}
-      <div className="md:hidden bg-darkcanvas-surface border-b border-darkcanvas-border px-4 py-3 flex items-center justify-between sticky top-0 z-50">
-        <VitBrand showSubtitle={false} />
+      <div className="md:hidden bg-darkcanvas-surface border-b border-darkcanvas-border px-3.5 py-2.5 flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center gap-2">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 text-slate-300 hover:text-white rounded-lg hover:bg-darkcanvas-border"
+            className="p-1.5 text-slate-300 hover:text-white rounded-lg hover:bg-darkcanvas-border focus:outline-none"
+            aria-label="Toggle navigation menu"
           >
-            {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+            {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
+          <VitBrand showSubtitle={false} />
+        </div>
+        <div className="flex items-center gap-2">
+          <NavLink
+            to="/student/report"
+            className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-bold shadow-sm"
+          >
+            <FilePlus size={13} />
+            <span>Report</span>
+          </NavLink>
         </div>
       </div>
+
+      {/* Mobile Backdrop Overlay */}
+      {mobileMenuOpen && (
+        <div
+          onClick={() => setMobileMenuOpen(false)}
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-30 md:hidden"
+          aria-hidden="true"
+        />
+      )}
 
       {/* Sidebar Desktop & Mobile Overlay */}
       <aside
@@ -166,8 +185,8 @@ export const StudentLayout = ({ children, title }) => {
 
       {/* Main Workspace Area */}
       <main className="flex-1 flex flex-col min-w-0">
-        {/* Top Header */}
-        <header className="h-16 bg-darkcanvas-surface/90 backdrop-blur-md border-b border-darkcanvas-border px-6 lg:px-8 flex items-center justify-between sticky top-0 z-30">
+        {/* Top Header - Desktop Only */}
+        <header className="hidden md:flex h-16 bg-darkcanvas-surface/90 backdrop-blur-md border-b border-darkcanvas-border px-6 lg:px-8 items-center justify-between sticky top-0 z-20">
           <div className="flex items-center gap-3">
             <span className="hidden sm:inline-flex items-center px-2.5 py-1 rounded bg-darkcanvas-border text-white text-[11px] font-bold tracking-wider uppercase">
               Vidyalankar Campus Registry
@@ -188,7 +207,7 @@ export const StudentLayout = ({ children, title }) => {
         </header>
 
         {/* Content Body */}
-        <div className="p-6 lg:p-8 flex-1 max-w-7xl w-full mx-auto">
+        <div className="p-3.5 sm:p-6 lg:p-8 flex-1 max-w-7xl w-full mx-auto">
           {children}
         </div>
       </main>

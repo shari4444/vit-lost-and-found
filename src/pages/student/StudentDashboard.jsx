@@ -126,8 +126,8 @@ export const StudentDashboard = () => {
   return (
     <div className="space-y-8 font-sans">
       {/* Top Banner / Student Greeting Section */}
-      <section className="relative overflow-hidden rounded-xl bg-surface-container-lowest dark:bg-darkcanvas-surface p-6 lg:p-8 shadow-sm border border-surface-container-high dark:border-darkcanvas-border">
-        <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+      <section className="relative overflow-hidden rounded-xl bg-surface-container-lowest dark:bg-darkcanvas-surface p-4 sm:p-6 lg:p-8 shadow-sm border border-surface-container-high dark:border-darkcanvas-border">
+        <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 sm:gap-6">
           <div className="max-w-2xl space-y-2">
             <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-secondary-fixed/40 dark:bg-darkcanvas-border text-on-secondary-fixed-variant dark:text-slate-300">
               <span className="w-1.5 h-1.5 rounded-full bg-primary-container dark:bg-emerald-400 animate-pulse"></span>
@@ -141,7 +141,7 @@ export const StudentDashboard = () => {
             <p className="text-xs sm:text-sm text-secondary dark:text-slate-300 leading-relaxed">
               Track your active claims, view verified match suggestions, and manage your reported items across the Vidyalankar campus registry.
             </p>
-            <div className="flex items-center gap-4 pt-1 text-xs text-secondary dark:text-slate-400 font-medium">
+            <div className="flex flex-wrap items-center gap-3 pt-1 text-xs text-secondary dark:text-slate-400 font-medium">
               <span className="flex items-center gap-1">
                 <ShieldCheck size={14} className="text-secondary dark:text-slate-400" />
                 Roll: <strong className="text-primary dark:text-white">{studentData?.roll_no || 'N/A'}</strong>
@@ -152,7 +152,7 @@ export const StudentDashboard = () => {
           </div>
 
           {/* Quick Action Buttons */}
-          <div className="flex flex-wrap items-center gap-2.5 shrink-0">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 w-full sm:w-auto shrink-0 [&>a]:w-full sm:[&>a]:w-auto [&>a]:justify-center">
             <Link
               to="/student/report"
               className="inline-flex items-center gap-1.5 bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white font-bold text-xs px-4 py-2.5 rounded-lg shadow-md transition active:scale-[0.99]"
@@ -275,7 +275,7 @@ export const StudentDashboard = () => {
       </section>
 
       {/* Recent Requests Table Section */}
-      <section className="bg-surface-container-lowest dark:bg-darkcanvas-surface rounded-xl shadow-sm border border-surface-container-high dark:border-darkcanvas-border p-6">
+      <section className="bg-surface-container-lowest dark:bg-darkcanvas-surface rounded-xl shadow-sm border border-surface-container-high dark:border-darkcanvas-border p-4 sm:p-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-5 border-b border-surface-container dark:border-darkcanvas-border gap-3">
           <div>
             <div className="flex items-center gap-2">
@@ -322,25 +322,25 @@ export const StudentDashboard = () => {
             </Link>
           </div>
         ) : (
-          <div className="overflow-x-auto -mx-6 px-6 mt-2">
+          <div className="overflow-x-auto -mx-4 sm:-mx-6 px-4 sm:px-6 mt-2">
             <table className="w-full text-left text-xs border-collapse">
               <thead>
                 <tr className="bg-surface-container-low dark:bg-darkcanvas-border/50 text-secondary dark:text-slate-400 font-bold uppercase tracking-wider text-[10px]">
-                  <th className="py-3 px-4 rounded-l">Docket ID</th>
-                  <th className="py-3 px-4">Item Details</th>
-                  <th className="py-3 px-4 hidden md:table-cell">Category</th>
-                  <th className="py-3 px-4 hidden sm:table-cell">Date Reported</th>
-                  <th className="py-3 px-4">Status</th>
-                  <th className="py-3 px-4 text-right rounded-r">Action</th>
+                  <th className="py-3 px-3 sm:px-4 rounded-l whitespace-nowrap">Docket ID</th>
+                  <th className="py-3 px-3 sm:px-4">Item Details</th>
+                  <th className="py-3 px-3 sm:px-4 hidden md:table-cell whitespace-nowrap">Category</th>
+                  <th className="py-3 px-3 sm:px-4 hidden sm:table-cell whitespace-nowrap">Date Reported</th>
+                  <th className="py-3 px-3 sm:px-4 whitespace-nowrap">Status</th>
+                  <th className="py-3 px-3 sm:px-4 text-right rounded-r whitespace-nowrap">Action</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-surface-container dark:divide-darkcanvas-border">
                 {recentRequests.map((req) => (
                   <tr key={req.request_id} className="hover:bg-surface-container-low/50 dark:hover:bg-darkcanvas-border/30 transition-colors">
-                    <td className="py-3.5 px-4 font-mono font-bold text-primary dark:text-white">
+                    <td className="py-3.5 px-3 sm:px-4 font-mono font-bold text-primary dark:text-white whitespace-nowrap">
                       #{req.request_id}
                     </td>
-                    <td className="py-3.5 px-4">
+                    <td className="py-3.5 px-3 sm:px-4 min-w-[140px]">
                       <div className="flex flex-col">
                         <span className="font-semibold text-primary dark:text-white">
                           {req.description?.slice(0, 40) || req.category}
@@ -352,18 +352,18 @@ export const StudentDashboard = () => {
                         )}
                       </div>
                     </td>
-                    <td className="py-3.5 px-4 hidden md:table-cell text-secondary dark:text-slate-300">
+                    <td className="py-3.5 px-3 sm:px-4 hidden md:table-cell text-secondary dark:text-slate-300 whitespace-nowrap">
                       <span className="px-2 py-0.5 rounded bg-surface-container dark:bg-darkcanvas-border text-[11px] font-medium">
                         {req.category}
                       </span>
                     </td>
-                    <td className="py-3.5 px-4 hidden sm:table-cell text-secondary dark:text-slate-400 font-mono text-[11px]">
+                    <td className="py-3.5 px-3 sm:px-4 hidden sm:table-cell text-secondary dark:text-slate-400 font-mono text-[11px] whitespace-nowrap">
                       {req.date_report}
                     </td>
-                    <td className="py-3.5 px-4">
+                    <td className="py-3.5 px-3 sm:px-4 whitespace-nowrap">
                       {getStatusBadge(req.status)}
                     </td>
-                    <td className="py-3.5 px-4 text-right">
+                    <td className="py-3.5 px-3 sm:px-4 text-right whitespace-nowrap">
                       <Link
                         to="/student/requests"
                         className="inline-flex items-center gap-1 font-bold text-primary dark:text-white hover:underline text-xs"

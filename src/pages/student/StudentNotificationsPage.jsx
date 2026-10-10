@@ -85,13 +85,13 @@ export const StudentNotificationsPage = () => {
             {notifications.map((notif) => (
               <div
                 key={`notif-${notif.notify_id}`}
-                className="p-5 hover:bg-surface-container-low/50 dark:hover:bg-darkcanvas-border/30 transition flex items-start gap-4"
+                className="p-3.5 sm:p-5 hover:bg-surface-container-low/50 dark:hover:bg-darkcanvas-border/30 transition flex items-start gap-3 sm:gap-4"
               >
-                <div className="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container dark:bg-purple-950 dark:text-purple-300 flex items-center justify-center shrink-0 mt-0.5 border border-secondary dark:border-purple-800">
-                  <CheckCircle2 size={18} />
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-secondary-container text-on-secondary-container dark:bg-purple-950 dark:text-purple-300 flex items-center justify-center shrink-0 mt-0.5 border border-secondary dark:border-purple-800">
+                  <CheckCircle2 size={16} className="sm:w-[18px] sm:h-[18px]" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center justify-between gap-2 mb-1">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
                     <span className="font-bold text-xs text-primary dark:text-purple-300 uppercase tracking-wider">
                       Match Notification #{notif.notify_id}
                     </span>
@@ -103,7 +103,7 @@ export const StudentNotificationsPage = () => {
                   <p className="text-xs text-on-surface dark:text-slate-200 leading-relaxed font-medium">
                     {notif.message}
                   </p>
-                  <div className="mt-2 flex items-center gap-2">
+                  <div className="mt-2 flex flex-wrap items-center gap-2">
                     <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800">
                       Dispatched Status: {notif.email_status}
                     </span>
@@ -121,10 +121,10 @@ export const StudentNotificationsPage = () => {
               .map((req) => (
                 <div
                   key={`req-update-${req.request_id}-${req.status}`}
-                  className="p-5 hover:bg-surface-container-low/50 dark:hover:bg-darkcanvas-border/30 transition flex items-start gap-4"
+                  className="p-3.5 sm:p-5 hover:bg-surface-container-low/50 dark:hover:bg-darkcanvas-border/30 transition flex items-start gap-3 sm:gap-4"
                 >
                   <div
-                    className={`w-10 h-10 rounded-lg flex items-center justify-center shrink-0 mt-0.5 border ${
+                    className={`w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center shrink-0 mt-0.5 border ${
                       req.status === 'Collected'
                         ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800'
                         : req.status === 'Under Review'
@@ -134,10 +134,10 @@ export const StudentNotificationsPage = () => {
                         : 'bg-surface-container text-secondary border-surface-container-high'
                     }`}
                   >
-                    <CheckCircle2 size={18} />
+                    <CheckCircle2 size={16} className="sm:w-[18px] sm:h-[18px]" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-center justify-between gap-2 mb-1">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
                       <span className="font-bold text-xs uppercase tracking-wider text-primary dark:text-white">
                         Admin Status Update • Request #{req.request_id}
                       </span>

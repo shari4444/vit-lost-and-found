@@ -86,7 +86,7 @@ export const AdminOverviewPage = () => {
   return (
     <div className="space-y-8 font-sans">
       {/* Overview Banner */}
-      <div className="bg-surface-container-lowest dark:bg-darkcanvas-surface border border-surface-container-high dark:border-darkcanvas-border rounded-xl p-6 sm:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 shadow-sm">
+      <div className="bg-surface-container-lowest dark:bg-darkcanvas-surface border border-surface-container-high dark:border-darkcanvas-border rounded-xl p-4 sm:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-5 sm:gap-6 shadow-sm">
         <div>
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-secondary-fixed/40 dark:bg-darkcanvas-border text-on-secondary-fixed-variant dark:text-slate-300 text-[11px] font-bold uppercase tracking-wider mb-2">
             <Database size={13} />
@@ -99,7 +99,7 @@ export const AdminOverviewPage = () => {
             Real-time aggregate data queried directly from <code>lost_requests</code>, <code>found_items</code>, and <code>students</code>.
           </p>
         </div>
-        <div className="flex gap-2.5 shrink-0">
+        <div className="flex flex-col sm:flex-row gap-2.5 w-full md:w-auto shrink-0 [&>button]:w-full sm:[&>button]:w-auto [&>button]:justify-center [&>a]:w-full sm:[&>a]:w-auto [&>a]:justify-center">
           <button
             onClick={() => setShowAddFoundModal(true)}
             className="px-4 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white font-bold text-xs shadow-md transition flex items-center gap-1.5"
@@ -118,7 +118,7 @@ export const AdminOverviewPage = () => {
       </div>
 
       {/* 8 Metric KPI Cards */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4">
         <div className="bg-surface-container-lowest dark:bg-darkcanvas-surface p-4 rounded-xl border border-surface-container-high dark:border-darkcanvas-border shadow-sm">
           <p className="text-[11px] font-bold text-secondary dark:text-slate-400 uppercase tracking-wider">Total Lost Requests</p>
           <h3 className="font-display font-bold text-2xl text-primary dark:text-white mt-1">{stats.totalLost}</h3>
@@ -192,35 +192,35 @@ export const AdminOverviewPage = () => {
           <table className="w-full text-left text-xs border-collapse">
             <thead>
               <tr className="bg-surface-container-low dark:bg-darkcanvas-border/50 text-[10px] font-bold uppercase tracking-wider text-secondary dark:text-slate-400 border-b border-surface-container dark:border-darkcanvas-border">
-                <th className="py-3 px-6">ID</th>
-                <th className="py-3 px-6">Category</th>
-                <th className="py-3 px-6">Description</th>
-                <th className="py-3 px-6">Reported Date</th>
-                <th className="py-3 px-6">Status</th>
-                <th className="py-3 px-6 text-right">Action</th>
+                <th className="py-3 px-3.5 sm:px-6 whitespace-nowrap">ID</th>
+                <th className="py-3 px-3.5 sm:px-6 whitespace-nowrap">Category</th>
+                <th className="py-3 px-3.5 sm:px-6">Description</th>
+                <th className="py-3 px-3.5 sm:px-6 whitespace-nowrap">Reported Date</th>
+                <th className="py-3 px-3.5 sm:px-6 whitespace-nowrap">Status</th>
+                <th className="py-3 px-3.5 sm:px-6 text-right whitespace-nowrap">Action</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-surface-container dark:divide-darkcanvas-border">
               {recentRequests.map((r) => (
                 <tr key={r.request_id} className="hover:bg-surface-container-low/40 dark:hover:bg-darkcanvas-border/30 transition">
-                  <td className="py-3.5 px-6 font-mono font-bold text-primary dark:text-white">
+                  <td className="py-3.5 px-3.5 sm:px-6 font-mono font-bold text-primary dark:text-white whitespace-nowrap">
                     #{r.request_id}
                   </td>
-                  <td className="py-3.5 px-6 font-semibold text-primary dark:text-white">
+                  <td className="py-3.5 px-3.5 sm:px-6 font-semibold text-primary dark:text-white whitespace-nowrap">
                     {r.category}
                   </td>
-                  <td className="py-3.5 px-6 text-on-surface-variant dark:text-slate-300 max-w-xs truncate">
+                  <td className="py-3.5 px-3.5 sm:px-6 text-on-surface-variant dark:text-slate-300 max-w-xs truncate min-w-[120px]">
                     {r.description}
                   </td>
-                  <td className="py-3.5 px-6 text-secondary dark:text-slate-400 font-mono text-[11px]">
+                  <td className="py-3.5 px-3.5 sm:px-6 text-secondary dark:text-slate-400 font-mono text-[11px] whitespace-nowrap">
                     {r.date_report}
                   </td>
-                  <td className="py-3.5 px-6">
+                  <td className="py-3.5 px-3.5 sm:px-6 whitespace-nowrap">
                     <span className="px-2.5 py-0.5 rounded text-[11px] font-bold bg-surface-container dark:bg-darkcanvas-border text-secondary dark:text-slate-300">
                       {r.status}
                     </span>
                   </td>
-                  <td className="py-3.5 px-6 text-right">
+                  <td className="py-3.5 px-3.5 sm:px-6 text-right whitespace-nowrap">
                     <Link
                       to="/admin/lost-requests"
                       className="font-bold text-primary dark:text-white hover:underline text-xs"

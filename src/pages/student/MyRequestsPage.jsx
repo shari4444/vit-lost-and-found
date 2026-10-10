@@ -151,7 +151,7 @@ export const MyRequestsPage = () => {
             return (
               <div key={step} className="relative z-10 flex flex-col items-center">
                 <div
-                  className={`w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold transition-all ${
+                  className={`w-5 h-5 sm:w-6 sm:h-6 rounded-full flex items-center justify-center text-[9px] sm:text-[10px] font-bold transition-all ${
                     isCurrent
                       ? 'bg-blue-600 text-white ring-2 ring-blue-400/50 shadow-md'
                       : isCompleted
@@ -162,7 +162,7 @@ export const MyRequestsPage = () => {
                   {idx + 1}
                 </div>
                 <span
-                  className={`text-[10px] mt-1 font-semibold whitespace-nowrap ${
+                  className={`text-[9px] sm:text-[10px] mt-1 font-semibold text-center leading-tight max-w-[65px] sm:max-w-none ${
                     isCurrent
                       ? 'text-primary dark:text-white font-bold'
                       : isCompleted
@@ -249,13 +249,13 @@ export const MyRequestsPage = () => {
             <table className="w-full text-left border-collapse text-xs">
               <thead>
                 <tr className="bg-surface-container-low dark:bg-darkcanvas-border/50 text-[10px] font-bold uppercase tracking-wider text-secondary dark:text-slate-400 border-b border-surface-container dark:border-darkcanvas-border">
-                  <th className="py-3 px-6">Docket #</th>
-                  <th className="py-3 px-6">Photo</th>
-                  <th className="py-3 px-6">Category</th>
-                  <th className="py-3 px-6">Description</th>
-                  <th className="py-3 px-6">Reported Date</th>
-                  <th className="py-3 px-6">Status</th>
-                  <th className="py-3 px-6 text-right">Details</th>
+                  <th className="py-3 px-3.5 sm:px-6 whitespace-nowrap">Docket #</th>
+                  <th className="py-3 px-3.5 sm:px-6 whitespace-nowrap">Photo</th>
+                  <th className="py-3 px-3.5 sm:px-6 whitespace-nowrap">Category</th>
+                  <th className="py-3 px-3.5 sm:px-6">Description</th>
+                  <th className="py-3 px-3.5 sm:px-6 whitespace-nowrap">Reported Date</th>
+                  <th className="py-3 px-3.5 sm:px-6 whitespace-nowrap">Status</th>
+                  <th className="py-3 px-3.5 sm:px-6 text-right whitespace-nowrap">Details</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-surface-container dark:divide-darkcanvas-border">
@@ -265,10 +265,10 @@ export const MyRequestsPage = () => {
                     className="hover:bg-surface-container-low/50 dark:hover:bg-darkcanvas-border/30 transition cursor-pointer"
                     onClick={() => handleOpenDetail(req)}
                   >
-                    <td className="py-4 px-6 font-mono font-bold text-primary dark:text-white">
+                    <td className="py-4 px-3.5 sm:px-6 font-mono font-bold text-primary dark:text-white whitespace-nowrap">
                       #{req.request_id}
                     </td>
-                    <td className="py-4 px-6">
+                    <td className="py-4 px-3.5 sm:px-6 whitespace-nowrap">
                       {req.photo_url ? (
                         <img
                           src={req.photo_url}
@@ -281,7 +281,7 @@ export const MyRequestsPage = () => {
                         </div>
                       )}
                     </td>
-                    <td className="py-4 px-6 font-semibold text-primary dark:text-white">
+                    <td className="py-4 px-3.5 sm:px-6 font-semibold text-primary dark:text-white whitespace-nowrap">
                       {req.category}
                       {req.colour && (
                         <span className="block text-[11px] text-secondary dark:text-slate-400 font-normal">
@@ -289,14 +289,14 @@ export const MyRequestsPage = () => {
                         </span>
                       )}
                     </td>
-                    <td className="py-4 px-6 text-on-surface-variant dark:text-slate-300 max-w-xs truncate">
+                    <td className="py-4 px-3.5 sm:px-6 text-on-surface-variant dark:text-slate-300 max-w-xs truncate min-w-[120px]">
                       {req.description}
                     </td>
-                    <td className="py-4 px-6 text-secondary dark:text-slate-400 font-mono text-[11px]">
+                    <td className="py-4 px-3.5 sm:px-6 text-secondary dark:text-slate-400 font-mono text-[11px] whitespace-nowrap">
                       {req.date_report}
                     </td>
-                    <td className="py-4 px-6">{getStatusBadge(req.status)}</td>
-                    <td className="py-4 px-6 text-right">
+                    <td className="py-4 px-3.5 sm:px-6 whitespace-nowrap">{getStatusBadge(req.status)}</td>
+                    <td className="py-4 px-3.5 sm:px-6 text-right whitespace-nowrap">
                       <button
                         onClick={(e) => {
                           e.stopPropagation();
@@ -319,7 +319,7 @@ export const MyRequestsPage = () => {
       {/* Request Detail Modal */}
       {selectedRequest && (
         <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="bg-surface-container-lowest dark:bg-darkcanvas-surface rounded-xl max-w-xl w-full p-6 shadow-2xl border border-surface-container-high dark:border-darkcanvas-border space-y-4 animate-in fade-in">
+          <div className="bg-surface-container-lowest dark:bg-darkcanvas-surface rounded-xl max-w-xl w-full max-h-[90vh] overflow-y-auto p-4 sm:p-6 shadow-2xl border border-surface-container-high dark:border-darkcanvas-border space-y-4 animate-in fade-in">
             <div className="flex items-center justify-between border-b border-surface-container dark:border-darkcanvas-border pb-3">
               <div>
                 <span className="text-[11px] font-mono font-bold text-secondary dark:text-slate-400">

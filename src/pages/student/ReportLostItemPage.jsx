@@ -140,7 +140,7 @@ export const ReportLostItemPage = () => {
 
   return (
     <div className="max-w-3xl mx-auto space-y-6">
-      <div className="bg-surface-container-lowest dark:bg-darkcanvas-surface rounded-xl border border-surface-container-high dark:border-darkcanvas-border shadow-sm p-6 sm:p-8">
+      <div className="bg-surface-container-lowest dark:bg-darkcanvas-surface rounded-xl border border-surface-container-high dark:border-darkcanvas-border shadow-sm p-4 sm:p-8">
         <div className="border-b border-surface-container dark:border-darkcanvas-border pb-5 mb-6">
           <span className="text-[11px] font-bold uppercase tracking-wider text-secondary dark:text-slate-400">
             Official Case Filing
@@ -264,7 +264,7 @@ export const ReportLostItemPage = () => {
             )}
           </div>
 
-          <div className="pt-4 border-t border-surface-container dark:border-darkcanvas-border flex items-center justify-end gap-3">
+          <div className="pt-4 border-t border-surface-container dark:border-darkcanvas-border flex flex-col-reverse sm:flex-row items-stretch sm:items-center justify-end gap-3 [&>button]:w-full sm:[&>button]:w-auto [&>button]:justify-center">
             <button
               type="button"
               onClick={() => navigate('/student/requests')}

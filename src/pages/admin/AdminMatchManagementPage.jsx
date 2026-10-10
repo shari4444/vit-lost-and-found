@@ -330,9 +330,9 @@ export const AdminMatchManagementPage = () => {
       )}
 
       {/* Candidate Pickers (Lost vs Found) */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
         {/* Left Column: Lost Requests Picker */}
-        <div className="bg-surface-container-lowest dark:bg-darkcanvas-surface rounded-xl shadow-sm border border-surface-container-high dark:border-darkcanvas-border p-5 flex flex-col">
+        <div className="bg-surface-container-lowest dark:bg-darkcanvas-surface rounded-xl shadow-sm border border-surface-container-high dark:border-darkcanvas-border p-4 sm:p-5 flex flex-col">
           <div className="flex items-center justify-between pb-3 mb-3 border-b border-surface-container dark:border-darkcanvas-border">
             <div>
               <h2 className="text-sm font-bold text-primary dark:text-white flex items-center gap-2">
@@ -396,7 +396,7 @@ export const AdminMatchManagementPage = () => {
         </div>
 
         {/* Right Column: Found Items Picker */}
-        <div className="bg-surface-container-lowest dark:bg-darkcanvas-surface rounded-xl shadow-sm border border-surface-container-high dark:border-darkcanvas-border p-5 flex flex-col">
+        <div className="bg-surface-container-lowest dark:bg-darkcanvas-surface rounded-xl shadow-sm border border-surface-container-high dark:border-darkcanvas-border p-4 sm:p-5 flex flex-col">
           <div className="flex items-center justify-between pb-3 mb-3 border-b border-surface-container dark:border-darkcanvas-border">
             <div>
               <h2 className="text-sm font-bold text-primary dark:text-white flex items-center gap-2">
@@ -461,7 +461,7 @@ export const AdminMatchManagementPage = () => {
 
       {/* Side-by-Side Comparison Workspace & Heuristic Confidence */}
       {selectedLost && selectedFound && (
-        <div className="bg-surface-container-lowest dark:bg-darkcanvas-surface rounded-xl shadow-sm border border-surface-container-high dark:border-darkcanvas-border p-6 space-y-6">
+        <div className="bg-surface-container-lowest dark:bg-darkcanvas-surface rounded-xl shadow-sm border border-surface-container-high dark:border-darkcanvas-border p-4 sm:p-6 space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-surface-container dark:border-darkcanvas-border gap-4">
             <div>
               <span className="text-[11px] font-bold uppercase tracking-wider text-secondary dark:text-slate-400">
@@ -634,20 +634,20 @@ export const AdminMatchManagementPage = () => {
             <table className="w-full text-left text-xs border-collapse">
               <thead>
                 <tr className="bg-surface-container-low dark:bg-darkcanvas-border/50 text-secondary dark:text-slate-400 uppercase tracking-wider text-[10px] font-bold">
-                  <th className="py-3 px-6">Match ID</th>
-                  <th className="py-3 px-6">Lost Docket</th>
-                  <th className="py-3 px-6">Found Item</th>
-                  <th className="py-3 px-6">Match Date</th>
-                  <th className="py-3 px-6 text-right">Verification Status</th>
+                  <th className="py-3 px-3.5 sm:px-6 whitespace-nowrap">Match ID</th>
+                  <th className="py-3 px-3.5 sm:px-6">Lost Docket</th>
+                  <th className="py-3 px-3.5 sm:px-6">Found Item</th>
+                  <th className="py-3 px-3.5 sm:px-6 whitespace-nowrap">Match Date</th>
+                  <th className="py-3 px-3.5 sm:px-6 text-right whitespace-nowrap">Verification Status</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-surface-container dark:divide-darkcanvas-border">
                 {matchesList.map((m) => (
                   <tr key={m.match_id} className="hover:bg-surface-container-low/40 dark:hover:bg-darkcanvas-border/30 transition">
-                    <td className="py-3.5 px-6 font-mono font-bold text-primary dark:text-white">
+                    <td className="py-3.5 px-3.5 sm:px-6 font-mono font-bold text-primary dark:text-white whitespace-nowrap">
                       #{m.match_id}
                     </td>
-                    <td className="py-3.5 px-6">
+                    <td className="py-3.5 px-3.5 sm:px-6 min-w-[140px]">
                       <span className="font-semibold text-primary dark:text-white">
                         Request #{m.request_id}
                       </span>
@@ -655,7 +655,7 @@ export const AdminMatchManagementPage = () => {
                         {m.lost_requests?.category} ({m.lost_requests?.colour || '—'})
                       </span>
                     </td>
-                    <td className="py-3.5 px-6">
+                    <td className="py-3.5 px-3.5 sm:px-6 min-w-[140px]">
                       <span className="font-semibold text-primary dark:text-white">
                         Found #{m.found_id}
                       </span>
@@ -663,10 +663,10 @@ export const AdminMatchManagementPage = () => {
                         Locker: {m.found_items?.location || 'Admin Office'}
                       </span>
                     </td>
-                    <td className="py-3.5 px-6 font-mono text-[11px] text-secondary dark:text-slate-400">
+                    <td className="py-3.5 px-3.5 sm:px-6 font-mono text-[11px] text-secondary dark:text-slate-400 whitespace-nowrap">
                       {m.match_date ? new Date(m.match_date).toLocaleDateString() : 'Recent'}
                     </td>
-                    <td className="py-3.5 px-6 text-right">
+                    <td className="py-3.5 px-3.5 sm:px-6 text-right whitespace-nowrap">
                       <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[11px] font-bold bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
                         <Check size={12} />
                         <span>Verified Paired</span>
